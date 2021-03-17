@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="28040922bbeb4d879f4cb0791578f686" Name="Diagram1">
+        <EntityTypeShape EntityType="HandsClothesModel.Material" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.MaterialInProduct" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.MaterialSupplier" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.MaterialType" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.Product" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.ProductType" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.Supplier" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.SupplierType" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesModel.UpdateHistory" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="HandsClothesModel.FK__Material__Type__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesModel.FK__MaterialI__Mater__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesModel.FK__MaterialS__Mater__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesModel.FK__UpdateHis__Mater__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesModel.FK__MaterialI__Produ__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesModel.FK__MaterialS__Suppl__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesModel.FK__Product__Type__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesModel.FK__Supplier__Type__5FB337D6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
