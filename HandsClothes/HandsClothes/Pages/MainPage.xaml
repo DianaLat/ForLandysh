@@ -1,0 +1,87 @@
+﻿<Page x:Class="HandsClothes.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HandsClothes.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="White"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--<DockPanel LastChildFill="True">-->
+
+        <TextBlock Text="Поиск:" FontSize="16" TextAlignment="Center" Margin="0,5" VerticalAlignment="Bottom"/>
+        <TextBox Name="Find" MinWidth="120" Margin="10,0" FontSize="16" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" SelectionChanged="Find_SelectionChanged"/>
+
+        <TextBlock Text="Фильтр:" FontSize="16" TextAlignment="Center" Margin="0,5" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <ComboBox Name="Filter" MinWidth="120" Margin="10,0" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" DisplayMemberPath="Name" SelectionChanged="Filter_SelectionChanged"/>
+
+        <TextBlock Text="Сортировка по возрастанию:" TextWrapping="Wrap" FontSize="16" TextAlignment="Center" Margin="0,5" Grid.Column="2" VerticalAlignment="Bottom"/>
+        <ComboBox Name="SortWane" MinWidth="120" Margin="10,0" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" SelectionChanged="SortWane_SelectionChanged"/>
+
+        <TextBlock Text="Сортировка по убыванию:" TextWrapping="Wrap" Width="120" FontSize="16" TextAlignment="Center" Margin="0,5" Grid.Column="3" VerticalAlignment="Bottom"/>
+        <ComboBox Name="SortRise" MinWidth="120" Margin="10,0" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Stretch" SelectionChanged="SortRise_SelectionChanged"/>
+
+        <TextBlock Text="XX/XX" Name="Counter" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Grid.Column="4" Grid.Row="1"/>
+
+        <!--</DockPanel>-->
+        <ListView Name="Materials" Grid.Row="2" Grid.ColumnSpan="5">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <!--<StackPanel Orientation="Vertical">
+                        <TextBlock Background="AliceBlue" Text="mnf.dshg"/>
+                    </StackPanel>-->
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="{Binding Color}" Grid.ColumnSpan="3"/>
+                        <Image Source="{Binding StringImage}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="70" MaxWidth="120" Margin="5"/>
+                        <StackPanel Margin="15,0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding MaterialType.Name}" FontSize="18"/>
+                                <TextBlock Text=" | " FontSize="18"/>
+                                <TextBlock Text="{Binding Name}" FontSize="18"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Минимальное количество: " FontSize="16"/>
+                                <TextBlock Text="{Binding MinCount}" FontSize="16"/>
+                                <TextBlock Text="{Binding Unit}" FontSize="16" Margin="3,0"/>
+                            </StackPanel>
+                            <TextBlock Text="{Binding Suppliers}" FontSize="16" Width="500" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <TextBlock Grid.Column="2" Text="{Binding StringRemain}" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="5" HorizontalAlignment="Right" Margin="15,0" VerticalAlignment="Center"/>
+    </Grid>
+</Page>
+
+                                
+
+
+           
+            

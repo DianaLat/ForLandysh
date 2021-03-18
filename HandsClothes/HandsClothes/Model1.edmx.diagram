@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="38cb17c130734aabafc4b394d06fd84e" Name="Diagram1">
+        <EntityTypeShape EntityType="HandsClothesNewModel.Material" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesNewModel.MaterialSupplier" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesNewModel.MaterialType" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesNewModel.Supplier" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesNewModel.SupplierType" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HandsClothesNewModel.UpdateHistory" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="HandsClothesNewModel.FK__Material__Type__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesNewModel.FK__MaterialS__Mater__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesNewModel.FK__UpdateHis__Mater__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesNewModel.FK__MaterialS__Suppl__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="HandsClothesNewModel.FK__Supplier__Type__5FB337D6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
