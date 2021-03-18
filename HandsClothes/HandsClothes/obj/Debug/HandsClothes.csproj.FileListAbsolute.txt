@@ -22,3 +22,9 @@ C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\bin\Debug\ru\
 C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\obj\Debug\HandsClothes_Content.g.cs
 C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\obj\Debug\HandsClothes.csproj.CopyComplete
 C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\obj\Debug\HandsClothes.csproj.CoreCompileInputs.cache
+C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\bin\Debug\HandsClothes.exe.manifest
+C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\bin\Debug\HandsClothes.application
+C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\obj\Debug\Pages\AlterPage.g.cs
+C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\obj\Debug\Pages\AlterPage.baml
+C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\obj\Debug\HandsClothes.exe.manifest
+C:\Users\201713\Desktop\SecretRepozitory\HandsClothes\HandsClothes\obj\Debug\HandsClothes.application

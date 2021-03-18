@@ -13,7 +13,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition/>
             <RowDefinition Height="12*"/>
-            <RowDefinition/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -39,7 +39,7 @@
         <TextBlock Text="XX/XX" Name="Counter" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Grid.Column="4" Grid.Row="1"/>
 
         <!--</DockPanel>-->
-        <ListView Name="Materials" Grid.Row="2" Grid.ColumnSpan="5">
+        <ListView Name="Materials" Grid.Row="2" Grid.ColumnSpan="5" SelectionChanged="Materials_SelectionChanged">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -76,7 +76,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackPanel Grid.Row="3" Grid.ColumnSpan="5" HorizontalAlignment="Right" Margin="15,0" VerticalAlignment="Center"/>
+        <ScrollViewer Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Right" Margin="15,0" VerticalAlignment="Center" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Auto">
+            <StackPanel Name="ButtonsStack" Orientation="Horizontal"/>
+        </ScrollViewer>
+        <Button Name="Add"  Grid.Row="3" Grid.ColumnSpan="5" HorizontalAlignment="Center" Content="Добавить" VerticalAlignment="Center" Click="Add_Click"/>
     </Grid>
 </Page>
 
@@ -84,4 +87,5 @@
 
 
            
+            
             

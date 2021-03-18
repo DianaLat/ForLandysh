@@ -9,7 +9,7 @@ namespace HandsClothes
 {
     class Database
     {
-        public static HandsClothesNewEntities1 db = new HandsClothesNewEntities1();
+        public static HandsClothesNewEntities db = new HandsClothesNewEntities();
     }
     public partial class Material
     {
@@ -30,7 +30,7 @@ namespace HandsClothes
             get
             {
                 if (CountInWarehouse < MinCount) return "#f19292";
-                else if (CountInWarehouse == MinCount * 3) return "#ffba01";
+                else if (CountInWarehouse >= MinCount * 3) return "#ffba01";
                 else return "White";
             }
         }
@@ -53,12 +53,12 @@ namespace HandsClothes
             get
             {
                 string s = "Поставщики: ";
-                if (MaterialSuppliers.Count == 0) return s+"-";
+                if (MaterialSuppliers.Count == 0) return s + "-";
                 foreach (MaterialSupplier sup in MaterialSuppliers)
                 {
                     s += sup.Supplier1.Name + ", ";
                 }
-                return s.Remove(s.Length-2, 1);
+                return s.Remove(s.Length - 2, 1);
             }
         }
         public static List<Material> OrderToWane(List<Material> list, int i)
@@ -94,6 +94,29 @@ namespace HandsClothes
                 newList = list.OrderByDescending(u => u.Price).ToList();
             }
             return newList;
+        }
+        //public string SupsStack
+        //{
+        //    get
+        //    {
+        //        string ret = "";
+        //        foreach (MaterialSupplier s in MaterialSuppliers)
+        //        {
+        //            ret += s.Supplier1.Name + "/n";
+        //        }
+        //        return ret;
+        //    }
+        //}
+        public string Description
+        {
+            get
+            {
+                return "СРОЧНО МЕНЯЙ ДБ";
+            }
+            set
+            {
+
+            }
         }
     }
 }

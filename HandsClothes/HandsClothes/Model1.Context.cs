@@ -13,10 +13,10 @@ namespace HandsClothes
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class HandsClothesNewEntities1 : DbContext
+    public partial class HandsClothesDBEntities : DbContext
     {
-        public HandsClothesNewEntities1()
-            : base("name=HandsClothesNewEntities1")
+        public HandsClothesDBEntities()
+            : base("name=HandsClothesDBEntities")
         {
         }
     
